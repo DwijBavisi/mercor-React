@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mercor-React/static/css/main.1a1a03a2.css",
-    "main.js": "/mercor-React/static/js/main.220150b5.js",
-    "static/js/787.cda612ba.chunk.js": "/mercor-React/static/js/787.cda612ba.chunk.js",
-    "index.html": "/mercor-React/index.html",
-    "main.1a1a03a2.css.map": "/mercor-React/static/css/main.1a1a03a2.css.map",
-    "main.220150b5.js.map": "/mercor-React/static/js/main.220150b5.js.map",
-    "787.cda612ba.chunk.js.map": "/mercor-React/static/js/787.cda612ba.chunk.js.map"
+    "main.css": "/mercor-React/build/static/css/main.1a1a03a2.css",
+    "main.js": "/mercor-React/build/static/js/main.af60c306.js",
+    "static/js/787.cda612ba.chunk.js": "/mercor-React/build/static/js/787.cda612ba.chunk.js",
+    "index.html": "/mercor-React/build/index.html",
+    "main.1a1a03a2.css.map": "/mercor-React/build/static/css/main.1a1a03a2.css.map",
+    "main.af60c306.js.map": "/mercor-React/build/static/js/main.af60c306.js.map",
+    "787.cda612ba.chunk.js.map": "/mercor-React/build/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a1a03a2.css",
-    "static/js/main.220150b5.js"
+    "static/js/main.af60c306.js"
   ]
 }
