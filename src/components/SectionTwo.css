@@ -1,0 +1,73 @@
+.scroll2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 3em;
+
+    /* height: 300vh; */
+    padding: 0 40px;
+}
+
+.scroll2>div {
+    position: sticky;
+    color: white;
+    margin-top: 1em;
+    top: 1em;
+    flex: 0 0 50%;
+    padding-bottom: 1em;
+}
+
+.scroll2>#container {
+    scroll-snap-type: y mandatory;
+}
+
+.scroll2>div>section {
+    background: #101010;
+    border-radius: 10px;
+    margin: 0 2em;
+    margin-top: 2em;
+    padding: 0 1em;
+
+    --flag: clamp(0, calc(var(--status) - var(--percent) - 80), 1);
+    /* --flagn: clamp(0, calc(var(--percent) - var(--status) + var(--diff) + 80), 1); */
+    /* --flag: calc(var(--flagp) * var(--flagn)); */
+
+    opacity: var(--flag);
+    min-height: calc(80vh * var(--flag)) !important;
+    max-height: calc(100vh * var(--flag)) !important;
+
+    transition: 0.5s ease-in-out;
+}
+
+.scroll2 .small {
+    font-size: 0.5em;
+    font-weight: 400;
+    display: block;
+}
+
+.scroll2>#scrollbar {
+    position: sticky;
+    top: 6em;
+    float: right;
+    font-size: 0.5em;
+    width: 1.5em;
+    flex: 0 1 1em;
+}
+
+.scroll2>#scrollbar>#bar {
+    display: block;
+    width: 75%;
+    min-height: 60vh;
+    background: #101010;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.scroll2>#scrollbar>#bar>#fill {
+    display: block;
+    width: 100%;
+    height: calc((var(--status) - 60) * (60 / 100) * 1vh);
+    background: #350a85;
+    content: ' ';
+}
